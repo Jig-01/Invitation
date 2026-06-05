@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigyasa & Abhishek — Engagement Invitation</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="You are cordially invited to celebrate the engagement of Jigyasa & Abhishek. Join us for an evening of love, laughter, and celebration.">
+    <meta property="og:title" content="Jigyasa & Abhishek — Engagement Invitation">
+    <meta property="og:description" content="Join us in celebrating our engagement. Click to view invitation details, date, and venue.">
+    <meta property="og:image" content="assets/couple1.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Premium Pre-loader Screen -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <svg viewBox="0 0 100 100" class="loader-svg">
+                <circle cx="50" cy="50" r="42" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-dasharray="2 2" class="loader-circle" />
+                <circle cx="50" cy="50" r="37" fill="none" stroke="var(--color-gold)" stroke-width="0.5" />
+                <path d="M 50,22 C 46,30 46,38 50,47 C 54,38 54,30 50,22 Z" fill="none" stroke="var(--color-gold)" stroke-width="0.75" class="loader-petal" />
+                <text x="51%" y="58%" text-anchor="middle" font-family="'Playfair Display', serif" font-size="16" fill="var(--color-gold)" font-style="italic" class="loader-text">J & A</text>
+            </svg>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Background Botanical Watermarks -->
+    <div class="bg-floral bg-floral-left" aria-hidden="true">
+        <svg viewBox="0 0 200 400" width="100%" height="100%">
+            <!-- A graceful, leafy branch winding upwards -->
+            <path d="M -20,400 Q 80,300 20,200 T 50,0" fill="none" stroke="var(--color-gold)" stroke-width="0.75" opacity="0.18" />
+            <!-- Leaf 1 -->
+            <path d="M 22,290 C 40,285 50,295 48,310 C 35,315 25,305 22,290 Z" fill="none" stroke="var(--color-gold)" stroke-width="0.5" opacity="0.18" />
+            <!-- Leaf 2 -->
+            <path d="M 35,210 C 55,200 65,215 58,230 C 40,235 30,225 35,210 Z" fill="none" stroke="var(--color-gold)" stroke-width="0.5" opacity="0.18" />
+            <!-- Leaf 3 -->
+            <path d="M 10,130 C -5,120 -15,135 -10,150 C 5,152 12,142 10,130 Z" fill="none" stroke="var(--color-gold)" stroke-width="0.5" opacity="0.18" />
+            <!-- Leaf 4 -->
+            <path d="M 40,60 C 60,50 68,68 58,80 C 42,80 35,70 40,60 Z" fill="none" stroke="var(--color-gold)" stroke-width="0.5" opacity="0.18" />
+        </svg>
+    </div>
+    <div class="bg-floral bg-floral-right" aria-hidden="true">
+        <svg viewBox="0 0 200 400" width="100%" height="100%">
+            <!-- Mirror branch winding upwards -->
+            <path d="M 220,400 Q 120,300 180,200 T 150,0" fill="none" stroke="var(--color-gold)" stroke-width="0.75" opacity="0.18" />
+            <!-- Leaf 1 -->
+            <path d="M 178,290 C 160,285 150,295 152,310 C 165,315 175,305 178,290 Z" fill="none" stroke="var(--color-gold)" stroke-width="0.5" opacity="0.18" />
+            <!-- Leaf 2 -->
+            <path d="M 165,210 C 145,200 135,215 142,230 C 160,235 170,225 165,210 Z" fill="none" stroke="var(--color-gold)" stroke-width="0.5" opacity="0.18" />
+            <!-- Leaf 3 -->
+            <path d="M 190,130 C 205,120 215,135 210,150 C 195,152 188,142 190,130 Z" fill="none" stroke="var(--color-gold)" stroke-width="0.5" opacity="0.18" />
+            <!-- Leaf 4 -->
+            <path d="M 160,60 C 140,50 132,68 142,80 C 158,80 165,70 160,60 Z" fill="none" stroke="var(--color-gold)" stroke-width="0.5" opacity="0.18" />
+        </svg>
+    </div>
+
+    <!-- Background Audio Visualizer / Control -->
+    <div class="audio-control" id="audio-control" aria-label="Toggle ambient music" role="button" tabindex="0">
+        <div class="equalizer" id="equalizer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <span class="audio-text">Play Music</span>
+    </div>
+
+    <!-- Paper Texture Overlay -->
+    <div class="paper-overlay"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <div class="crest">
+                <svg viewBox="0 0 100 100" width="100" height="100">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-dasharray="2 2" />
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="var(--color-gold)" stroke-width="0.5" />
+                    <path d="M 50,15 C 45,25 45,35 50,45 C 55,35 55,25 50,15 Z" fill="none" stroke="var(--color-gold)" stroke-width="0.5" opacity="0.5" />
+                    <text x="50%" y="56%" text-anchor="middle" font-family="'Playfair Display', serif" font-size="20" fill="var(--color-gold)" font-style="italic">J & A</text>
+                </svg>
+            </div>
+            
+            <p class="subtitle animate-slide-up">TOGETHER WITH THEIR FAMILIES</p>
+            <h1 class="names animate-slide-up delay-1">Jigyasa & Abhishek</h1>
+            <p class="announcement animate-slide-up delay-2">ARE HAPPY TO ANNOUNCE THEIR ENGAGEMENT</p>
+            
+            <div class="date-badge animate-slide-up delay-3">
+                <span class="badge-line"></span>
+                <span class="badge-text">21 . 11 . 2026</span>
+                <span class="badge-line"></span>
+            </div>
+            
+            <div class="scroll-indicator animate-bounce delay-4" onclick="document.getElementById('invite-section').scrollIntoView({ behavior: 'smooth' })">
+                <span>SCROLL TO INVITE</span>
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="var(--color-gold)" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Invitation details & Countdown Section -->
+    <section class="invite-section" id="invite-section">
+        <div class="container">
+            <div class="reveal-on-scroll card card-invite">
+                <!-- Elegant Corner Florals -->
+                <svg viewBox="0 0 100 100" class="floral-corner-left">
+                    <path d="M10,10 C20,10 30,20 40,10 C50,20 40,30 30,40 C20,30 10,20 10,10 Z" fill="none" stroke="var(--color-gold)" stroke-width="1.5"/>
+                    <path d="M15,15 Q35,5 30,25" fill="none" stroke="var(--color-gold)" stroke-width="0.8"/>
+                    <path d="M8,40 Q22,55 15,70" fill="none" stroke="var(--color-gold)" stroke-width="0.8"/>
+                </svg>
+                <svg viewBox="0 0 100 100" class="floral-corner-right">
+                    <path d="M10,10 C20,10 30,20 40,10 C50,20 40,30 30,40 C20,30 10,20 10,10 Z" fill="none" stroke="var(--color-gold)" stroke-width="1.5"/>
+                    <path d="M15,15 Q35,5 30,25" fill="none" stroke="var(--color-gold)" stroke-width="0.8"/>
+                    <path d="M8,40 Q22,55 15,70" fill="none" stroke="var(--color-gold)" stroke-width="0.8"/>
+                </svg>
+
+                <!-- Premium Double Borders -->
+                <div class="card-border"></div>
+                <div class="card-border-inner"></div>
+
+                <div class="card-content">
+                    <h2 class="section-title">The Invitation</h2>
+                    <p class="invite-text">
+                        We invite you to share in our joy as we take the first step towards a lifetime together. 
+                        Join us for an event of celebrations, lunch, and dancing to mark our engagement.
+                    </p>
+                    
+                    <div class="event-time">
+                        <div class="time-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18">
+                                <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" fill="var(--color-gold)"/>
+                            </svg>
+                            <span>Saturday, November 21, 2026</span>
+                        </div>
+                        <div class="time-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" fill="var(--color-gold)"/>
+                            </svg>
+                            <span>11:00 AM Onwards</span>
+                        </div>
+                    </div>
+
+                    <!-- Deluxe Botanical Separator -->
+                    <div class="divider">
+                        <svg viewBox="0 0 160 20" width="140" height="16" class="botanical-divider">
+                            <!-- Left branch -->
+                            <path d="M 0,10 Q 35,5 70,10" fill="none" stroke="var(--color-gold)" stroke-width="1.25" />
+                            <path d="M 30,8 C 25,2 35,2 32,8 Z" fill="var(--color-gold)" />
+                            <path d="M 50,9 C 48,4 58,4 53,9 Z" fill="var(--color-gold)" />
+                            <!-- Center blossom -->
+                            <circle cx="80" cy="10" r="4.5" fill="none" stroke="var(--color-gold)" stroke-width="1" />
+                            <circle cx="80" cy="10" r="1.5" fill="var(--color-gold)" />
+                            <!-- Right branch -->
+                            <path d="M 90,10 Q 125,5 160,10" fill="none" stroke="var(--color-gold)" stroke-width="1.25" />
+                            <path d="M 130,8 C 135,2 125,2 128,8 Z" fill="var(--color-gold)" />
+                            <path d="M 110,9 C 112,4 102,4 107,9 Z" fill="var(--color-gold)" />
+                        </svg>
+                    </div>
+
+                    <div class="countdown-container">
+                        <h3 class="countdown-title">COUNTING DOWN THE DAYS</h3>
+                        <div class="countdown" id="countdown">
+                            <div class="countdown-item">
+                                <span class="number" id="days">00</span>
+                                <span class="label">Days</span>
+                            </div>
+                            <div class="countdown-sep">:</div>
+                            <div class="countdown-item">
+                                <span class="number" id="hours">00</span>
+                                <span class="label">Hours</span>
+                            </div>
+                            <div class="countdown-sep">:</div>
+                            <div class="countdown-item">
+                                <span class="number" id="minutes">00</span>
+                                <span class="label">Mins</span>
+                            </div>
+                            <div class="countdown-sep">:</div>
+                            <div class="countdown-item">
+                                <span class="number" id="seconds">00</span>
+                                <span class="label">Secs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section" id="gallery-section">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">Moments</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal-on-scroll aspect-portrait">
+                    <img src="assets/couple1.png" alt="Jigyasa and Abhishek portrait">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="gallery-item reveal-on-scroll aspect-landscape">
+                    <img src="assets/aesthetic.png" alt="Engagement floral aesthetic">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="gallery-item reveal-on-scroll aspect-portrait">
+                    <img src="assets/couple2.png" alt="Jigyasa and Abhishek details">
+                    <div class="img-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue & Info Section -->
+    <section class="venue-section" id="venue-section">
+        <div class="container">
+            <div class="reveal-on-scroll card card-venue">
+                <!-- Elegant Corner Florals -->
+                <svg viewBox="0 0 100 100" class="floral-corner-left">
+                    <path d="M10,10 C20,10 30,20 40,10 C50,20 40,30 30,40 C20,30 10,20 10,10 Z" fill="none" stroke="var(--color-gold)" stroke-width="1.5"/>
+                    <path d="M15,15 Q35,5 30,25" fill="none" stroke="var(--color-gold)" stroke-width="0.8"/>
+                    <path d="M8,40 Q22,55 15,70" fill="none" stroke="var(--color-gold)" stroke-width="0.8"/>
+                </svg>
+                <svg viewBox="0 0 100 100" class="floral-corner-right">
+                    <path d="M10,10 C20,10 30,20 40,10 C50,20 40,30 30,40 C20,30 10,20 10,10 Z" fill="none" stroke="var(--color-gold)" stroke-width="1.5"/>
+                    <path d="M15,15 Q35,5 30,25" fill="none" stroke="var(--color-gold)" stroke-width="0.8"/>
+                    <path d="M8,40 Q22,55 15,70" fill="none" stroke="var(--color-gold)" stroke-width="0.8"/>
+                </svg>
+
+                <!-- Premium Double Borders -->
+                <div class="card-border"></div>
+                <div class="card-border-inner"></div>
+
+                <div class="card-content">
+                    <h2 class="section-title">The Venue</h2>
+                    <h3 class="venue-name">THE GRAND BALLROOM</h3>
+                    <p class="venue-hotel">Radisson Blu Plaza</p>
+                    <p class="venue-address">National Highway 8, Mahipalpur, New Delhi, 110037</p>
+                    
+                    <!-- Simulated Premium Map Design -->
+                    <div class="map-container">
+                        <div class="map-graphic">
+                            <svg viewBox="0 0 400 200" width="100%" height="100%" class="map-svg">
+                                <rect width="400" height="200" fill="#FFF2F4" />
+                                <path d="M-10 100 L410 100" stroke="rgba(90, 44, 53, 0.12)" stroke-width="8" fill="none" />
+                                <path d="M100 -10 L100 210" stroke="rgba(90, 44, 53, 0.12)" stroke-width="8" fill="none" />
+                                <path d="M300 -10 L300 210" stroke="rgba(90, 44, 53, 0.12)" stroke-width="4" fill="none" />
+                                <path d="M-10 50 L410 160" stroke="rgba(90, 44, 53, 0.06)" stroke-width="6" fill="none" />
+                                <g transform="translate(100, 100)">
+                                    <circle cx="0" cy="0" r="15" fill="rgba(216, 165, 126, 0.2)" class="pulse-ring" />
+                                    <circle cx="0" cy="0" r="8" fill="var(--color-gold)" />
+                                    <path d="M-5 -15 L5 -15 L0 -5 Z" fill="var(--color-gold)" />
+                                </g>
+                                <text x="120" y="95" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="var(--color-primary)">Radisson Blu Plaza</text>
+                                <text x="120" y="112" font-family="'Montserrat', sans-serif" font-size="9" fill="rgba(90, 44, 53, 0.7)">National Highway 8</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <a href="https://maps.google.com/?q=Radisson+Blu+Plaza+Delhi+Airport" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <span>GET DIRECTIONS</span>
+                        <svg viewBox="0 0 24 24" width="14" height="14">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-crest">J & A</p>
+            <p class="footer-thankyou">Thank you for being a part of our journey.</p>
+            <p class="footer-copyright">&copy; 2026 Jigyasa & Abhishek. Crafted with Love.</p>
+        </div>
+    </footer>
+
+    <!-- App Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>
